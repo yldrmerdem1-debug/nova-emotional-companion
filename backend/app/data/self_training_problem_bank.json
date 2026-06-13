@@ -1,0 +1,204 @@
+{
+  "problems": [
+    {
+      "id": "cpp_vector_sum_1",
+      "domain": "cpp",
+      "difficulty": 1,
+      "type": "trace_vector_sum",
+      "prompt": "C++: vector<int> v={1,2,3,4}; sum başlangıçta 0. Döngüyle tüm elemanlar eklenirse sum kaç olur?",
+      "expected": 10,
+      "concepts": ["vector", "loop", "sum"],
+      "explanation": "Döngü 1+2+3+4 toplar, sonuç 10 olur."
+    },
+    {
+      "id": "cpp_pointer_alias_1",
+      "domain": "cpp",
+      "difficulty": 2,
+      "type": "pointer_alias",
+      "prompt": "C++: int x=5; int* p=&x; *p=8; x kaç olur?",
+      "expected": 8,
+      "concepts": ["pointer", "dereference", "alias"],
+      "explanation": "p, x'in adresini tutar. *p=8 yazınca x'in değeri 8 olur."
+    },
+    {
+      "id": "cpp_reference_alias_1",
+      "domain": "cpp",
+      "difficulty": 2,
+      "type": "reference_alias",
+      "prompt": "C++: int x=4; int& r=x; r+=6; x kaç olur?",
+      "expected": 10,
+      "concepts": ["reference", "alias"],
+      "explanation": "r, x'in başka adı gibidir. r+=6 işlemi x'i 10 yapar."
+    },
+    {
+      "id": "cpp_modulo_loop_1",
+      "domain": "cpp",
+      "difficulty": 2,
+      "type": "loop_count",
+      "prompt": "C++: for(int i=0;i<10;i+=2) döngüsü kaç kez çalışır?",
+      "expected": 5,
+      "concepts": ["for_loop", "iteration"],
+      "explanation": "i değerleri 0,2,4,6,8 olur. Toplam 5 kez çalışır."
+    },
+    {
+      "id": "cpp_binary_search_1",
+      "domain": "cpp",
+      "difficulty": 3,
+      "type": "binary_search_steps",
+      "prompt": "Sorted array [1,3,5,7,9,11,13] içinde 9 için binary search kaçıncı kontrol adımında bulur? İlk kontrol 1 sayılır.",
+      "expected": 3,
+      "concepts": ["binary_search", "algorithm", "invariant"],
+      "explanation": "İlk mid 7, ikinci mid 11, üçüncü mid 9 olur. Bu yüzden 3. kontrol adımında bulunur."
+    },
+    {
+      "id": "cpp_vector_complexity_1",
+      "domain": "cpp",
+      "difficulty": 3,
+      "type": "complexity",
+      "prompt": "C++ std::vector içinde ortadan eleman silmenin Big-O karmaşıklığı nedir? O(1)=1, O(log n)=2, O(n)=3 olarak cevapla.",
+      "expected": 3,
+      "concepts": ["vector", "big_o", "erase"],
+      "explanation": "Ortadan silince sonraki elemanlar kaydırılır. Bu yüzden O(n), yani kodlanmış cevap 3."
+    },
+    {
+      "id": "cpp_unique_ptr_ownership_1",
+      "domain": "cpp",
+      "difficulty": 3,
+      "type": "ownership",
+      "prompt": "C++ unique_ptr için sahiplik tek midir? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["unique_ptr", "ownership", "raii"],
+      "explanation": "unique_ptr tek sahiplik modelidir; kopyalanamaz, taşınabilir. Cevap 1."
+    },
+    {
+      "id": "cpp_recursion_base_1",
+      "domain": "cpp",
+      "difficulty": 3,
+      "type": "recursion",
+      "prompt": "Recursive fonksiyonda base case yoksa risk nedir? Sonsuz çağrı/stack overflow=1, O(1) hız=0.",
+      "expected": 1,
+      "concepts": ["recursion", "base_case", "stack"],
+      "explanation": "Base case yoksa çağrı durmayabilir ve stack overflow oluşabilir. Cevap 1."
+    },
+    {
+      "id": "math_linear_1",
+      "domain": "math",
+      "difficulty": 1,
+      "type": "linear_equation",
+      "prompt": "Matematik: 2x + 3 = 11 ise x kaçtır?",
+      "expected": 4,
+      "concepts": ["linear_equation"],
+      "explanation": "2x+3=11 ise 2x=8, x=4."
+    },
+    {
+      "id": "math_fraction_1",
+      "domain": "math",
+      "difficulty": 1,
+      "type": "fraction",
+      "prompt": "Matematik: 1/2 + 1/4 kaç çeyrek eder?",
+      "expected": 3,
+      "concepts": ["fraction", "common_denominator"],
+      "explanation": "1/2 = 2/4, 2/4+1/4=3/4. Çeyrek sayısı 3."
+    },
+    {
+      "id": "math_quadratic_sum_1",
+      "domain": "math",
+      "difficulty": 2,
+      "type": "quadratic_roots_sum",
+      "prompt": "Matematik: x^2 - 5x + 6 = 0 denkleminin kökleri toplamı kaçtır?",
+      "expected": 5,
+      "concepts": ["quadratic", "roots"],
+      "explanation": "ax^2+bx+c için kökler toplamı -b/a'dır. Burada -(-5)/1=5."
+    },
+    {
+      "id": "math_delta_1",
+      "domain": "math",
+      "difficulty": 2,
+      "type": "discriminant",
+      "prompt": "Matematik: x^2 + 2x + 1 = 0 için delta kaçtır?",
+      "expected": 0,
+      "concepts": ["quadratic", "delta"],
+      "explanation": "Delta=b^2-4ac=2^2-4*1*1=0."
+    },
+    {
+      "id": "math_series_1",
+      "domain": "math",
+      "difficulty": 3,
+      "type": "series_sum",
+      "prompt": "Matematik: 1+2+...+10 toplamı kaçtır?",
+      "expected": 55,
+      "concepts": ["series", "induction"],
+      "explanation": "n(n+1)/2 formülünde n=10 için 10*11/2=55."
+    },
+    {
+      "id": "math_function_value_1",
+      "domain": "math",
+      "difficulty": 2,
+      "type": "function_value",
+      "prompt": "Matematik: f(x)=3x-2 ise f(5) kaçtır?",
+      "expected": 13,
+      "concepts": ["function", "substitution"],
+      "explanation": "f(5)=3*5-2=15-2=13."
+    },
+    {
+      "id": "math_derivative_basic_1",
+      "domain": "math",
+      "difficulty": 3,
+      "type": "derivative",
+      "prompt": "Matematik: f(x)=x^2 için f'(3) kaçtır?",
+      "expected": 6,
+      "concepts": ["derivative", "power_rule"],
+      "explanation": "f'(x)=2x, f'(3)=6."
+    },
+    {
+      "id": "algo_linear_search_1",
+      "domain": "algorithms",
+      "difficulty": 1,
+      "type": "linear_search",
+      "prompt": "Algoritma: [4,8,2,9] dizisinde 2 lineer aramada kaçıncı kontrolde bulunur? İlk kontrol 1 sayılır.",
+      "expected": 3,
+      "concepts": ["linear_search"],
+      "explanation": "4 birinci, 8 ikinci, 2 üçüncü kontrolde bulunur."
+    },
+    {
+      "id": "algo_stack_lifo_1",
+      "domain": "algorithms",
+      "difficulty": 1,
+      "type": "stack",
+      "prompt": "Algoritma: stack'e sırasıyla 1,2,3 push edilirse ilk pop sonucu kaçtır?",
+      "expected": 3,
+      "concepts": ["stack", "lifo"],
+      "explanation": "Stack LIFO çalışır; son giren 3 ilk çıkar."
+    },
+    {
+      "id": "algo_queue_fifo_1",
+      "domain": "algorithms",
+      "difficulty": 1,
+      "type": "queue",
+      "prompt": "Algoritma: queue'ya sırasıyla 1,2,3 eklenirse ilk dequeue sonucu kaçtır?",
+      "expected": 1,
+      "concepts": ["queue", "fifo"],
+      "explanation": "Queue FIFO çalışır; ilk giren 1 ilk çıkar."
+    },
+    {
+      "id": "algo_sort_complexity_1",
+      "domain": "algorithms",
+      "difficulty": 3,
+      "type": "sorting_complexity",
+      "prompt": "Algoritma: comparison sort genel alt sınırı O(n log n) midir? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["sorting", "complexity", "lower_bound"],
+      "explanation": "Karşılaştırmalı sıralamada genel alt sınır O(n log n) kabul edilir. Cevap 1."
+    },
+    {
+      "id": "algo_dp_overlap_1",
+      "domain": "algorithms",
+      "difficulty": 3,
+      "type": "dynamic_programming",
+      "prompt": "Algoritma: Dynamic programming için örtüşen alt problemler önemli midir? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["dynamic_programming", "overlapping_subproblems"],
+      "explanation": "DP genelde örtüşen alt problemleri saklayarak tekrar hesaplamayı azaltır. Cevap 1."
+    }
+  ]
+}

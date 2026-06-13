@@ -1,0 +1,52 @@
+{
+  "domains": {
+    "cpp": {
+      "label": "C++",
+      "minimum_bank_count": 12,
+      "minimum_knowledge_count": 8,
+      "minimum_difficulties": [1, 2, 3, 4],
+      "core_topics": ["syntax", "pointers", "references", "stl", "oop", "raii", "complexity", "recursion", "algorithms"],
+      "advanced_topics": ["templates", "move_semantics", "concurrency", "memory_model", "graph_algorithms", "dynamic_programming"]
+    },
+    "python": {
+      "label": "Python",
+      "minimum_bank_count": 12,
+      "minimum_knowledge_count": 8,
+      "minimum_difficulties": [1, 2, 3, 4],
+      "core_topics": ["syntax", "lists", "dicts", "functions", "oop", "exceptions", "files", "testing", "algorithms"],
+      "advanced_topics": ["generators", "decorators", "typing", "asyncio", "data_processing", "debugging"]
+    },
+    "java": {
+      "label": "Java",
+      "minimum_bank_count": 12,
+      "minimum_knowledge_count": 8,
+      "minimum_difficulties": [1, 2, 3, 4],
+      "core_topics": ["syntax", "oop", "collections", "exceptions", "generics", "interfaces", "streams", "testing"],
+      "advanced_topics": ["jvm", "concurrency", "memory", "design_patterns", "spring_basics"]
+    },
+    "math": {
+      "label": "Mathematics",
+      "minimum_bank_count": 16,
+      "minimum_knowledge_count": 10,
+      "minimum_difficulties": [1, 2, 3, 4],
+      "core_topics": ["algebra", "functions", "proof", "number_theory", "combinatorics", "geometry", "calculus", "linear_algebra"],
+      "advanced_topics": ["olympiad_inequalities", "modular_arithmetic", "recurrences", "probability", "vectors", "induction"]
+    },
+    "physics": {
+      "label": "Physics",
+      "minimum_bank_count": 12,
+      "minimum_knowledge_count": 8,
+      "minimum_difficulties": [1, 2, 3, 4],
+      "core_topics": ["kinematics", "newton_laws", "energy", "momentum", "electricity", "waves", "units", "vectors"],
+      "advanced_topics": ["rotational_motion", "oscillation", "circuits", "magnetism", "modern_physics"]
+    },
+    "algorithms": {
+      "label": "Algorithms",
+      "minimum_bank_count": 12,
+      "minimum_knowledge_count": 8,
+      "minimum_difficulties": [1, 2, 3, 4],
+      "core_topics": ["complexity", "search", "sort", "stack", "queue", "graph", "greedy", "dynamic_programming"],
+      "advanced_topics": ["shortest_path", "minimum_spanning_tree", "topological_sort", "segment_tree", "proof_of_correctness"]
+    }
+  }
+}

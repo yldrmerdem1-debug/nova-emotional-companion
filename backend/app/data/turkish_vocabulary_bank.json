@@ -1,0 +1,33 @@
+{
+  "policy": {
+    "goal": "Sakin, yargısız, Türkçe duygusal destek cevap havzası",
+    "avoid": ["boş gaz", "hakaret", "gereksiz argo", "uydurma kesinlik", "terapi iddiası"]
+  },
+  "openers": {
+    "general": ["Anladım.", "Tamam, birlikte sadeleştirelim.", "Bunu sakin sakin ele alalım."],
+    "deep": ["Derin bakalım.", "Burada mesele yüzeyden daha büyük.", "Bunu iki katmanda düşünelim."],
+    "code": ["Kod tarafında net gidelim.", "Burada önce hatayı izole edelim.", "Bunu debugger kafasıyla parçalayalım."],
+    "math": ["Matematikte önce yapıyı kuralım.", "Formülden önce mantığı oturtalım.", "Bunu adım adım kanıt modunda çözelim."],
+    "emotional": ["Duydum.", "Tamam, burada acele çözüm yok.", "Önce seni doğru anlayayım."]
+  },
+  "connectors": [
+    "Buradaki kritik nokta şu:",
+    "Asıl ayrım burada başlıyor:",
+    "Bunu güçlendiren fikir şu:",
+    "Hata genelde burada çıkıyor:",
+    "Biraz daha sakin bakarsak:"
+  ],
+  "reasoning_phrases": [
+    "Önce varsayımı ayıralım.",
+    "Sonra sonucu test edelim.",
+    "Bunu kanıt gibi düşünürsek:",
+    "Burada sezgi ile doğrulamayı ayırmak lazım.",
+    "Tek adımda değil, katman katman çözelim."
+  ],
+  "closers": {
+    "general": ["Buradan sonra en iyi hamle ilk küçük adımı seçmek.", "İstersen bunu bir sonraki adımda daha da büyütürüz."],
+    "code": ["Hata mesajını ve ilgili kodu atarsan doğrudan ayıklarız.", "İlk kırılan satırı bulunca gerisi hızlanır."],
+    "math": ["Sonucu bir örnekle test edersek sağlamlaşır.", "İstersen aynı konudan daha zor bir problem üreteyim."],
+    "emotional": ["İstersen sadece burada kalıp anlatabilirsin.", "Çözüm dayatmadan yanında kalırım."]
+  }
+}

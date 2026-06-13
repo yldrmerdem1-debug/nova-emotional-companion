@@ -1,0 +1,564 @@
+{
+  "problems": [
+    {
+      "id": "python_list_sum_1",
+      "domain": "python",
+      "difficulty": 1,
+      "type": "list_sum",
+      "prompt": "Python: nums=[2,4,6]. sum(nums) sonucu kaçtır?",
+      "expected": 12,
+      "concepts": ["lists", "sum"],
+      "explanation": "sum(nums) listedeki 2+4+6 değerlerini toplar ve 12 döndürür."
+    },
+    {
+      "id": "python_dict_lookup_1",
+      "domain": "python",
+      "difficulty": 1,
+      "type": "dict_lookup",
+      "prompt": "Python: d={'a':3,'b':5}; d['b'] kaçtır?",
+      "expected": 5,
+      "concepts": ["dicts", "lookup"],
+      "explanation": "Sözlükte 'b' anahtarının değeri 5'tir."
+    },
+    {
+      "id": "python_slice_1",
+      "domain": "python",
+      "difficulty": 2,
+      "type": "slice",
+      "prompt": "Python: s='robot'; s[1:4] çıktısının uzunluğu kaçtır?",
+      "expected": 3,
+      "concepts": ["slice", "strings"],
+      "explanation": "s[1:4] karakterleri index 1,2,3 alır: 'obo'. Uzunluk 3."
+    },
+    {
+      "id": "python_exception_flow_1",
+      "domain": "python",
+      "difficulty": 2,
+      "type": "exception_flow",
+      "prompt": "Python: try içinde ValueError raise edilirse ve except ValueError varsa except bloğu çalışır mı? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["exceptions", "control_flow"],
+      "explanation": "ValueError uygun except bloğuyla yakalanır, bu yüzden except bloğu çalışır."
+    },
+    {
+      "id": "python_generator_1",
+      "domain": "python",
+      "difficulty": 3,
+      "type": "generator",
+      "prompt": "Python generator fonksiyonu return yerine yield ile değer üretir mi? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["generators", "yield"],
+      "explanation": "Generator fonksiyonları yield ile sırayla değer üretir ve lazy çalışır."
+    },
+    {
+      "id": "python_big_o_dict_1",
+      "domain": "python",
+      "difficulty": 3,
+      "type": "complexity",
+      "prompt": "Python dict average-case key lookup O(1) midir? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["dicts", "complexity"],
+      "explanation": "Hash table yapısı nedeniyle dict key lookup ortalama durumda O(1) kabul edilir."
+    },
+    {
+      "id": "java_array_sum_1",
+      "domain": "java",
+      "difficulty": 1,
+      "type": "array_sum",
+      "prompt": "Java: int[] a={1,2,3}; tüm elemanlar toplanırsa sonuç kaçtır?",
+      "expected": 6,
+      "concepts": ["arrays", "loop"],
+      "explanation": "Dizi elemanları 1+2+3 olarak toplanır ve sonuç 6 olur."
+    },
+    {
+      "id": "java_string_length_1",
+      "domain": "java",
+      "difficulty": 1,
+      "type": "string_length",
+      "prompt": "Java: \"robot\".length() sonucu kaçtır?",
+      "expected": 5,
+      "concepts": ["strings", "methods"],
+      "explanation": "\"robot\" kelimesinde 5 karakter vardır."
+    },
+    {
+      "id": "java_oop_override_1",
+      "domain": "java",
+      "difficulty": 2,
+      "type": "oop_override",
+      "prompt": "Java'da subclass, superclass metodunu aynı imzayla yeniden yazarsa buna override denir mi? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["oop", "override"],
+      "explanation": "Aynı imzalı metodu subclass içinde yeniden tanımlamak method overriding'dir."
+    },
+    {
+      "id": "java_arraylist_get_1",
+      "domain": "java",
+      "difficulty": 2,
+      "type": "arraylist",
+      "prompt": "Java ArrayList'te get(index) average-case O(1) midir? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["collections", "arraylist", "complexity"],
+      "explanation": "ArrayList arka planda dinamik array kullandığı için index ile erişim O(1)'dir."
+    },
+    {
+      "id": "java_generics_1",
+      "domain": "java",
+      "difficulty": 3,
+      "type": "generics",
+      "prompt": "Java generics compile-time type safety sağlar mı? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["generics", "type_safety"],
+      "explanation": "Generics tip hatalarının çoğunu compile-time'da yakalamaya yardım eder."
+    },
+    {
+      "id": "java_interface_1",
+      "domain": "java",
+      "difficulty": 3,
+      "type": "interface",
+      "prompt": "Java'da bir class birden fazla interface implement edebilir mi? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["interfaces", "oop"],
+      "explanation": "Java class tek class extend eder ama birden fazla interface implement edebilir."
+    },
+    {
+      "id": "physics_velocity_1",
+      "domain": "physics",
+      "difficulty": 1,
+      "type": "kinematics",
+      "prompt": "Fizik: Bir cisim 10 saniyede 50 metre giderse ortalama hızı kaç m/s olur?",
+      "expected": 5,
+      "concepts": ["kinematics", "velocity", "units"],
+      "explanation": "Ortalama hız yol/zaman = 50/10 = 5 m/s."
+    },
+    {
+      "id": "physics_newton_1",
+      "domain": "physics",
+      "difficulty": 1,
+      "type": "newton_law",
+      "prompt": "Fizik: m=2 kg, a=3 m/s^2 ise F=ma kaç Newton olur?",
+      "expected": 6,
+      "concepts": ["newton_laws", "force"],
+      "explanation": "F=ma formülünde 2*3=6 Newton."
+    },
+    {
+      "id": "physics_energy_1",
+      "domain": "physics",
+      "difficulty": 2,
+      "type": "kinetic_energy",
+      "prompt": "Fizik: m=2 kg, v=3 m/s ise kinetik enerji kaç Joule olur? KE=1/2 mv^2.",
+      "expected": 9,
+      "concepts": ["energy", "kinetic_energy"],
+      "explanation": "KE=1/2*2*3^2=9 Joule."
+    },
+    {
+      "id": "physics_momentum_1",
+      "domain": "physics",
+      "difficulty": 2,
+      "type": "momentum",
+      "prompt": "Fizik: m=4 kg, v=5 m/s ise momentum kaç kg*m/s olur?",
+      "expected": 20,
+      "concepts": ["momentum"],
+      "explanation": "Momentum p=mv=4*5=20 kg*m/s."
+    },
+    {
+      "id": "physics_ohm_1",
+      "domain": "physics",
+      "difficulty": 3,
+      "type": "electricity",
+      "prompt": "Fizik: V=12 volt, R=4 ohm ise akım I=V/R kaç amperdir?",
+      "expected": 3,
+      "concepts": ["electricity", "ohm_law"],
+      "explanation": "Ohm kanununa göre I=V/R=12/4=3 amper."
+    },
+    {
+      "id": "physics_wave_1",
+      "domain": "physics",
+      "difficulty": 3,
+      "type": "waves",
+      "prompt": "Fizik: Dalga hızı v=20 m/s, frekans f=5 Hz ise dalga boyu kaç metredir?",
+      "expected": 4,
+      "concepts": ["waves", "frequency", "wavelength"],
+      "explanation": "v=f*lambda olduğundan lambda=20/5=4 metredir."
+    },
+    {
+      "id": "math_olympiad_mod_1",
+      "domain": "math",
+      "difficulty": 4,
+      "type": "olympiad_modular",
+      "prompt": "Olimpiyat matematik: 7^2 mod 5 kaçtır?",
+      "expected": 4,
+      "concepts": ["number_theory", "modular_arithmetic"],
+      "explanation": "7 mod 5 = 2, 2^2 = 4, yani 7^2 mod 5 = 4."
+    },
+    {
+      "id": "math_olympiad_pigeonhole_1",
+      "domain": "math",
+      "difficulty": 4,
+      "type": "pigeonhole",
+      "prompt": "Olimpiyat matematik: 13 kişi varsa en az iki kişinin aynı ayda doğmuş olması garanti midir? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["combinatorics", "pigeonhole"],
+      "explanation": "12 ay ve 13 kişi varsa güvercin yuvası ilkesine göre en az iki kişi aynı ayda doğmuştur."
+    },
+    {
+      "id": "math_olympiad_inequality_1",
+      "domain": "math",
+      "difficulty": 4,
+      "type": "inequality",
+      "prompt": "Olimpiyat matematik: Pozitif a için a + 1/a >= 2 her zaman doğru mudur? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["inequalities", "am_gm"],
+      "explanation": "AM-GM ile a ve 1/a pozitif olduğundan a+1/a >= 2*sqrt(1)=2."
+    },
+    {
+      "id": "algo_olympiad_invariant_1",
+      "domain": "algorithms",
+      "difficulty": 4,
+      "type": "invariant",
+      "prompt": "Olimpiyat algoritma: Bir döngüde her adımda toplam değişmiyorsa buna invariant denir mi? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["invariant", "proof_of_correctness"],
+      "explanation": "Döngü boyunca değişmeyen özellik invariant olarak kullanılır ve doğruluk kanıtında önemlidir."
+    },
+    {
+      "id": "algo_olympiad_graph_1",
+      "domain": "algorithms",
+      "difficulty": 4,
+      "type": "graph",
+      "prompt": "Olimpiyat algoritma: Unweighted graph'ta en kısa kenar sayısı için BFS uygun mudur? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["graph", "bfs", "shortest_path"],
+      "explanation": "Unweighted graph'ta BFS katman katman ilerler ve en kısa kenar sayısını bulur."
+    },
+    {
+      "id": "cpp_syntax_scope_1",
+      "domain": "cpp",
+      "difficulty": 1,
+      "type": "syntax_scope",
+      "prompt": "C++: int x=3; { int x=5; } dış bloktaki x kaç kalır?",
+      "expected": 3,
+      "concepts": ["syntax", "scope"],
+      "explanation": "İç bloktaki x ayrı değişkendir; dıştaki x 3 kalır."
+    },
+    {
+      "id": "cpp_pointer_null_1",
+      "domain": "cpp",
+      "difficulty": 2,
+      "type": "pointer_safety",
+      "prompt": "C++: nullptr dereference etmek güvenli midir? Evet=1, Hayır=0.",
+      "expected": 0,
+      "concepts": ["pointers", "memory", "safety"],
+      "explanation": "nullptr dereference etmek undefined behavior riskidir; güvenli değildir."
+    },
+    {
+      "id": "cpp_reference_const_1",
+      "domain": "cpp",
+      "difficulty": 3,
+      "type": "references",
+      "prompt": "C++ const reference büyük nesneyi kopyalamadan okumaya yarar mı? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["references", "const", "performance"],
+      "explanation": "const reference kopya maliyetini azaltır ve nesneyi değiştirmemeyi garanti eder."
+    },
+    {
+      "id": "cpp_olympiad_dp_1",
+      "domain": "cpp",
+      "difficulty": 4,
+      "type": "algorithms",
+      "prompt": "C++/Algoritma: Fibonacci DP'de memoization tekrar hesaplamayı azaltır mı? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["algorithms", "dynamic_programming", "memoization"],
+      "explanation": "Memoization aynı state'i tekrar çözmeyi engeller ve süreyi düşürür."
+    },
+    {
+      "id": "python_oop_class_1",
+      "domain": "python",
+      "difficulty": 1,
+      "type": "oop",
+      "prompt": "Python'da class nesne üretmek için şablon mudur? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["oop", "class", "syntax"],
+      "explanation": "Class nesnelerin veri ve davranış şablonudur."
+    },
+    {
+      "id": "python_file_read_1",
+      "domain": "python",
+      "difficulty": 2,
+      "type": "files",
+      "prompt": "Python'da with open(...) kullanmak dosyanın kapanmasını otomatik yönetir mi? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["files", "context_manager"],
+      "explanation": "with bloğu context manager kullanır ve dosyayı güvenli kapatır."
+    },
+    {
+      "id": "python_function_return_1",
+      "domain": "python",
+      "difficulty": 2,
+      "type": "functions",
+      "prompt": "Python: def f(): return 7. f() sonucu kaçtır?",
+      "expected": 7,
+      "concepts": ["functions", "return"],
+      "explanation": "Fonksiyon return 7 dediği için çağrı sonucu 7'dir."
+    },
+    {
+      "id": "python_testing_assert_1",
+      "domain": "python",
+      "difficulty": 3,
+      "type": "testing",
+      "prompt": "Python testinde assert actual == expected kontrolü doğrulama için kullanılır mı? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["testing", "assert"],
+      "explanation": "Assert beklenen ve gerçek sonucu karşılaştırır."
+    },
+    {
+      "id": "python_algorithm_binary_search_1",
+      "domain": "python",
+      "difficulty": 3,
+      "type": "algorithms",
+      "prompt": "Python/Algoritma: Sıralı listede binary search her adımda aralığı yaklaşık yarıya indirir mi? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["algorithms", "binary_search"],
+      "explanation": "Binary search sıralı dizide arama aralığını yarıya indirerek ilerler."
+    },
+    {
+      "id": "python_olympiad_recursion_1",
+      "domain": "python",
+      "difficulty": 4,
+      "type": "olympiad_recursion",
+      "prompt": "Python olimpiyat hazırlığı: Recursive çözümde base case zorunlu mudur? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["algorithms", "recursion", "base_case"],
+      "explanation": "Base case yoksa recursion durmayabilir."
+    },
+    {
+      "id": "java_syntax_main_1",
+      "domain": "java",
+      "difficulty": 1,
+      "type": "syntax",
+      "prompt": "Java'da public static void main program başlangıç noktası olarak kullanılabilir mi? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["syntax", "main"],
+      "explanation": "Standart Java uygulamalarında main metodu başlangıç noktasıdır."
+    },
+    {
+      "id": "java_exception_catch_1",
+      "domain": "java",
+      "difficulty": 2,
+      "type": "exceptions",
+      "prompt": "Java'da try içinde oluşan uygun exception catch bloğunda yakalanabilir mi? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["exceptions", "try_catch"],
+      "explanation": "Uygun catch bloğu exception akışını yakalar."
+    },
+    {
+      "id": "java_testing_junit_1",
+      "domain": "java",
+      "difficulty": 2,
+      "type": "testing",
+      "prompt": "Java'da JUnit birim test yazmak için kullanılan yaygın araç mıdır? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["testing", "junit"],
+      "explanation": "JUnit Java ekosisteminde yaygın bir unit test aracıdır."
+    },
+    {
+      "id": "java_stream_map_1",
+      "domain": "java",
+      "difficulty": 3,
+      "type": "streams",
+      "prompt": "Java Stream map işlemi elemanları dönüştürmek için kullanılır mı? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["streams", "map"],
+      "explanation": "map her elemanı verilen fonksiyonla başka bir değere dönüştürür."
+    },
+    {
+      "id": "java_oop_polymorphism_1",
+      "domain": "java",
+      "difficulty": 3,
+      "type": "oop",
+      "prompt": "Java polymorphism aynı interface üzerinden farklı implementasyonları çağırmaya izin verir mi? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["oop", "interfaces", "polymorphism"],
+      "explanation": "Polymorphism ortak tip üzerinden farklı davranışların çalışmasını sağlar."
+    },
+    {
+      "id": "java_olympiad_graph_1",
+      "domain": "java",
+      "difficulty": 4,
+      "type": "algorithms",
+      "prompt": "Java/Algoritma: Queue kullanımı BFS implementasyonu için uygun mudur? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["algorithms", "queue", "bfs"],
+      "explanation": "BFS katmanlı ilerlediği için FIFO queue kullanır."
+    },
+    {
+      "id": "math_geometry_triangle_1",
+      "domain": "math",
+      "difficulty": 2,
+      "type": "geometry",
+      "prompt": "Geometri: Bir üçgenin iç açıları toplamı kaç derecedir?",
+      "expected": 180,
+      "concepts": ["geometry", "triangle"],
+      "explanation": "Öklid geometrisinde üçgenin iç açıları toplamı 180 derecedir."
+    },
+    {
+      "id": "math_algebra_factor_1",
+      "domain": "math",
+      "difficulty": 2,
+      "type": "algebra",
+      "prompt": "Cebir: x^2-1 ifadesi (x-1)(x+1) olarak çarpanlara ayrılır mı? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["algebra", "factorization"],
+      "explanation": "İki kare farkı kuralı: x^2-1=(x-1)(x+1)."
+    },
+    {
+      "id": "math_function_composition_1",
+      "domain": "math",
+      "difficulty": 3,
+      "type": "functions",
+      "prompt": "Fonksiyon: f(x)=x+2, g(x)=3x ise f(g(2)) kaçtır?",
+      "expected": 8,
+      "concepts": ["functions", "composition"],
+      "explanation": "g(2)=6 ve f(6)=8."
+    },
+    {
+      "id": "math_linear_algebra_dot_1",
+      "domain": "math",
+      "difficulty": 3,
+      "type": "linear_algebra",
+      "prompt": "Lineer cebir: (1,2) dot (3,4) sonucu kaçtır?",
+      "expected": 11,
+      "concepts": ["linear_algebra", "vectors"],
+      "explanation": "Dot product 1*3 + 2*4 = 11."
+    },
+    {
+      "id": "math_proof_induction_1",
+      "domain": "math",
+      "difficulty": 4,
+      "type": "proof",
+      "prompt": "Kanıt: Tümevarımda base case ve induction step ikisi de gerekir mi? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["proof", "induction"],
+      "explanation": "Tümevarımda başlangıç doğrulanır ve n'den n+1'e geçiş kanıtlanır."
+    },
+    {
+      "id": "math_olympiad_geometry_1",
+      "domain": "math",
+      "difficulty": 4,
+      "type": "geometry",
+      "prompt": "Olimpiyat geometri: Paralel doğrularda yöndeş açılar eşit midir? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["geometry", "parallel_lines"],
+      "explanation": "Paralel doğruları kesen bir doğru yöndeş açı çiftlerini eşit yapar."
+    },
+    {
+      "id": "physics_vector_sum_1",
+      "domain": "physics",
+      "difficulty": 1,
+      "type": "vectors",
+      "prompt": "Fizik vektör: Aynı yönde 3 N ve 4 N kuvvetin bileşkesi kaç N olur?",
+      "expected": 7,
+      "concepts": ["vectors", "force"],
+      "explanation": "Aynı yöndeki vektörler doğrudan toplanır: 3+4=7 N."
+    },
+    {
+      "id": "physics_work_1",
+      "domain": "physics",
+      "difficulty": 2,
+      "type": "energy",
+      "prompt": "Fizik: F=5 N kuvvet cismi 2 m hareket ettirirse yapılan iş kaç Joule olur?",
+      "expected": 10,
+      "concepts": ["energy", "work"],
+      "explanation": "İş W=F*d=5*2=10 Joule."
+    },
+    {
+      "id": "physics_circuit_power_1",
+      "domain": "physics",
+      "difficulty": 3,
+      "type": "electricity",
+      "prompt": "Fizik: V=10 V, I=2 A ise güç P=VI kaç Watt olur?",
+      "expected": 20,
+      "concepts": ["electricity", "power"],
+      "explanation": "Elektriksel güç P=V*I=10*2=20 Watt."
+    },
+    {
+      "id": "physics_olympiad_projectile_1",
+      "domain": "physics",
+      "difficulty": 4,
+      "type": "kinematics",
+      "prompt": "Fizik olimpiyat hazırlığı: Hava direnci yoksa yatay atışta yatay hız sabit kalır mı? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["kinematics", "vectors"],
+      "explanation": "Hava direnci yoksa yatay yönde ivme yoktur, yatay hız sabit kalır."
+    },
+    {
+      "id": "physics_olympiad_momentum_1",
+      "domain": "physics",
+      "difficulty": 4,
+      "type": "momentum",
+      "prompt": "Fizik olimpiyat hazırlığı: Dış kuvvet yoksa sistemin toplam momentumu korunur mu? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["momentum", "conservation"],
+      "explanation": "Net dış kuvvet sıfırsa toplam momentum korunur."
+    },
+    {
+      "id": "physics_units_dimensional_1",
+      "domain": "physics",
+      "difficulty": 3,
+      "type": "units",
+      "prompt": "Fizik: Boyut analizi formül hatalarını yakalamaya yardım eder mi? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["units", "dimensional_analysis"],
+      "explanation": "Boyutlar tutarlı değilse formül veya işlem hatası olabilir."
+    },
+    {
+      "id": "algo_binary_search_invariant_1",
+      "domain": "algorithms",
+      "difficulty": 2,
+      "type": "search",
+      "prompt": "Algoritma: Binary search için dizinin sıralı olması gerekir mi? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["search", "binary_search", "invariant"],
+      "explanation": "Binary search doğru çalışmak için sıralı arama alanı varsayar."
+    },
+    {
+      "id": "algo_insertion_sort_1",
+      "domain": "algorithms",
+      "difficulty": 2,
+      "type": "sort",
+      "prompt": "Algoritma: Insertion sort worst-case O(n^2) midir? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["sort", "complexity"],
+      "explanation": "Insertion sort ters sıralı durumda yaklaşık n^2 karşılaştırma/kaydırma yapar."
+    },
+    {
+      "id": "algo_graph_degree_1",
+      "domain": "algorithms",
+      "difficulty": 2,
+      "type": "graph",
+      "prompt": "Algoritma: Undirected graph'ta tüm derece toplamı kenar sayısının 2 katı mıdır? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["graph", "proof"],
+      "explanation": "Her kenar iki uca katkı verdiği için derece toplamı 2E olur."
+    },
+    {
+      "id": "algo_dp_state_1",
+      "domain": "algorithms",
+      "difficulty": 3,
+      "type": "dynamic_programming",
+      "prompt": "Algoritma: DP çözümünde state tanımı yanlışsa transition doğru olsa bile çözüm bozulabilir mi? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["dynamic_programming", "state"],
+      "explanation": "DP'nin anlamı state ile kurulur; yanlış state problemi yanlış modelleyebilir."
+    },
+    {
+      "id": "algo_greedy_exchange_1",
+      "domain": "algorithms",
+      "difficulty": 4,
+      "type": "greedy",
+      "prompt": "Olimpiyat algoritma: Greedy doğruluğu için exchange argument kullanılabilir mi? Evet=1, Hayır=0.",
+      "expected": 1,
+      "concepts": ["greedy", "proof_of_correctness"],
+      "explanation": "Exchange argument, greedy seçimin optimal çözümle değiştirilebilir olduğunu gösterir."
+    }
+  ]
+}

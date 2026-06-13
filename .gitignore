@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# Node / frontend
+node_modules/
+dist/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data and generated training artifacts
+backend/app/data/*.jsonl
+backend/app/data/generated/
+backend/app/data/audio/
+backend/app/ml/models/
+backend/app/ml/local_llm_manifest.json
+
+# Keep curated knowledge packs
+!backend/app/data/knowledge_base/*.jsonl
+
+# Local database / logs
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
