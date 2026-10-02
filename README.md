@@ -75,7 +75,7 @@ Potential first markets:
 ## Repository Structure
 
 ```text
-ai-companion-brain/
+nova-emotional-companion/
   backend/
     app/
       core/                 # Settings and persona definition
